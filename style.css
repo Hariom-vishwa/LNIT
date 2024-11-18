@@ -41,7 +41,7 @@ header {
     transition: border 0.3s ease;
     font-family: "Poppins", sans-serif;
   }
-  
+
   nav a:hover {
     border-bottom: 0.5px solid var(--primary-col);
     height: 100%;
@@ -68,26 +68,26 @@ header {
     display: none;
   }
 
-  .hamCont{
+  .hamCont {
     position: relative;
   }
 
-  .hamCont .openHam{
+  .hamCont .openHam {
     display: grid;
     place-items: center;
     border: none;
-    background-color:transparent;
+    background-color: transparent;
     padding: 1vw;
     border-radius: 1vw;
   }
 
-  .hamCont .closeHam{
+  .hamCont .closeHam {
     border: none;
     background: transparent;
     display: none;
   }
 
-  .hamCont .hamMenu{
+  .hamCont .hamMenu {
     background-color: #fff;
     color: var(--primary-col);
     border: 0.2vw solid var(--primary-col);
@@ -103,11 +103,9 @@ header {
     top: 0;
   }
 
-  .hamCont .hamMenu a{
+  .hamCont .hamMenu a {
     font-size: 4vw;
   }
-
-
 
   /* Carousel */
 
@@ -414,8 +412,8 @@ header {
     display: flex;
   }
 
-  .hamCont{
-  display: none;
+  .hamCont {
+    display: none;
   }
 
   /* Carousel */
@@ -625,4 +623,52 @@ header {
     object-fit: cover;
     object-position: center;
   }
+
+  .facilitiesCont {
+    width: 100%;
+    padding: 3vw;
+    background-color: wheat;
+    text-align: center;
+  }
+
+  .facilitiesCont .facilitiesHeading {
+    width: 40vw;
+    margin: 2vw auto;
+    padding: 1vw;
+    text-align: center;
+    border-bottom: 2px solid var(--secondary-col);
+    color: var(--secondary-col);
+    font-family: "Faculty Glyphic", sans-serif;
+  }
+
+  .facilitiesCont .facilities {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(6, 1fr); /* Simplified for better readability */
+    gap: 2vw;
+    position: relative;
+  }
+  
+  .facilitiesCont .facilities .facilitiesIcons {
+    width: 12vw;
+    height: 12vw;
+    font-size: 12px;
+    background-color: #fff;
+    color: var(--primary-col);
+    padding: 1vw;
+    border-radius: 1vw;
+    transition: all 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Maintain grid alignment */
+    overflow: hidden; /* To handle content expansion smoothly */
+  }
+  
+  .facilitiesCont .facilities .facilitiesIcons p {
+    display: none;
+  }
+  
+  
 }
