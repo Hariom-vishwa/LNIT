@@ -12,6 +12,7 @@
   padding: 0;
   box-sizing: border-box;
   transition: all 0.5s ease;
+  /* border: 1px solid; */
 }
 
 header {
@@ -113,7 +114,7 @@ header {
     width: 100%;
     height: 100vw;
     position: relative;
-    margin: 6vw auto auto auto;
+    margin: 6vw auto 10vw auto;
   }
 
   .mySlides {
@@ -131,33 +132,33 @@ header {
   .next {
     cursor: pointer;
     position: absolute;
-    width: 20px;
-    height: 20px;
-    top: 50%;
+    width: 8vw;
+    height: 6vw;
+    top: 108%;
     display: grid;
     place-items: center;
-    margin-top: -22px;
     background-color: var(--primary-col);
     color: white;
     font-weight: bold;
-    font-size: 12px;
-    transition: 0.6s ease;
-    border-radius: 50%;
+    font-size: 3vw;
+    transition: all 0.6s ease;
+    border-radius: 20%;
     user-select: none;
   }
 
   .prev {
-    left: 5vw;
+    left: 40vw;
   }
 
   .next {
-    right: 5vw;
+    right: 40vw;
   }
 
   .prev:hover,
   .next:hover {
     background-color: white;
     color: var(--primary-col);
+    border: 0.3vw solid var(--primary-col);
   }
 
   .numbertext {
@@ -260,11 +261,12 @@ header {
   /* Recent News  */
 
   .recentNews .newsHeading {
-    width: 70vw;
+    width: 50vw;
     margin: 5vw auto;
     padding: 2vw;
+    font-size: 5vw;
     text-align: center;
-    border-bottom: 2px solid var(--secondary-col);
+    border-bottom: 0.2vw solid var(--secondary-col);
     color: var(--secondary-col);
     font-family: "Faculty Glyphic", sans-serif;
   }
@@ -321,12 +323,97 @@ header {
     object-fit: cover;
     object-position: center;
   }
+
+  /* Facilities  */
+
+  .facilitiesCont {
+    width: 100%;
+    padding: 3vw;
+    background-color: wheat;
+    text-align: center;
+  }
+
+  .facilitiesCont .facilitiesHeading {
+    width: 60vw;
+    margin: 2vw auto;
+    padding: 1vw;
+    text-align: center;
+    font-size: 5vw;
+    border-bottom: 0.2vw solid var(--secondary-col);
+    color: var(--secondary-col);
+    font-family: "Faculty Glyphic", sans-serif;
+  }
+
+  .facilitiesCont .facilities {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(1, 1fr); 
+    gap: 2vw;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .facilitiesCont .facilities .facilitiesIcons {
+    width: 90%;
+    height: auto;
+    text-decoration: none;
+    background-color: #fff;
+    color: var(--primary-col);
+    padding: 1vw;
+    border-radius: 1vw;
+    transition: all 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative; 
+    overflow: hidden;
+  }
+  
+  .facilitiesCont .facilities .facilitiesIcons h2 {
+    font-size: 3.5vw;
+    margin: 2vw;
+  }
+  
+  
+  .facilities .facilitiesIcons:hover{
+    background-color:wheat;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    transform: scale(1.15);
+    z-index: 1;
+    border: 0.2vw solid #fff;
+  }
+
+  .facilitiesCont .facilities .facilitiesIcons .icon{
+    width: 12vw;
+    height: 12vw;
+    display: grid;
+    place-items: center;
+    margin: 0.5vw auto;
+  }
+
+  .facilitiesCont .facilities .facilitiesIcons .icon svg{
+    width: 12vw;
+    height: 12vw;
+  }
+  
+  .facilitiesCont .facilities .facilitiesIcons p {
+    width: 0;
+    height: 0;
+    font-size: 0;
+  }
+
+  .facilitiesCont .facilities .facilitiesIcons:hover p{
+    width: 100%;
+    height: auto;
+    font-size:3vw;
+  }
 }
 
 @media screen and (min-width: 1024px) {
   nav {
     width: 100%;
-    height: 70px;
+    height: 5vw;
     background-color: #fff;
     display: flex;
     justify-content: space-around;
@@ -338,13 +425,14 @@ header {
 
   nav a {
     text-decoration: none;
+    font-size: 1vw;
     color: var(--secondary-col);
-    border: 2px solid #00000000;
+    border: 0.15vw solid #00000000;
     transition: border 0.3s ease;
     font-family: "Poppins", sans-serif;
   }
   nav a:hover {
-    border-bottom: 2px solid var(--primary-col);
+    border-bottom: 0.15vw solid var(--primary-col);
     height: 100%;
   }
 
@@ -356,10 +444,11 @@ header {
   }
 
   nav .leftNav img {
-    width: 40px;
-    height: 40px;
+    width: 3vw;
+    height: 3vw;
   }
   .leftNav h4 {
+    font-size: 1vw;
     margin: 0;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -369,7 +458,7 @@ header {
   .centerNav,
   .rightNav {
     display: flex;
-    gap: 50px;
+    gap: 3vw;
   }
 
   .drpdwn {
@@ -377,27 +466,29 @@ header {
   }
 
   .drpdwnBtn {
-    padding: 10px;
+    display: grid;
+    place-items: center;
+    /* padding: 1vw; */
     text-decoration: none;
   }
 
   .drpdwnMenu {
     display: none;
     position: absolute;
-    width: 250px;
+    width: 10vw;
     top: 100%;
     left: 0;
     background-color: #fff;
-    border: 1px solid var(--primary-col);
-    border-radius: 5px;
-    padding: 5px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border: 0.15vw solid var(--primary-col);
+    border-radius: 0.4vw;
+    padding: 0.3vw;
+    box-shadow: 0px 0.5vw 0.8vw rgba(0, 0, 0, 0.2);
     flex-direction: column;
   }
 
   .drpdwnMenu a {
-    padding: 10px;
-    border-radius: 5px;
+    padding: 0.4vw;
+    border-radius: 0.2vw;
     color: #333;
     text-decoration: none;
     display: block;
@@ -420,9 +511,9 @@ header {
 
   .slideshow-container {
     max-width: 100%;
-    height: 650px;
+    height: 40vw;
     position: relative;
-    margin: 70px auto auto auto;
+    margin: 5vw auto auto auto;
   }
 
   .mySlides {
@@ -431,7 +522,7 @@ header {
 
   .mySlides img {
     width: 100%;
-    height: 650px;
+    height: 40vw;
     object-fit: cover;
     object-position: center;
   }
@@ -470,14 +561,15 @@ header {
   }
 
   .numbertext {
-    height: 30px;
-    border-radius: 3px;
+    height: 1.5vw;
+    border-radius: 0.5vw;
     background-color: #1515156b;
     color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
+    font-size: 1vw;
+    padding: 0.1vw 0.3vw;
     position: absolute;
-    top: 0;
+    top: 1vw;
+    left: 1vw;
   }
 
   .fade {
@@ -497,46 +589,46 @@ header {
   /* Information  */
 
   .information {
-    margin: 70px auto;
-    padding: 40px;
-    width: 1200px;
-    height: 630px;
+    margin: 4vw auto;
+    padding: 2vw;
+    width: 85%;
+    height: 30vw;
     background: linear-gradient(135deg, var(--primary-col), #cb3136);
-    border-radius: 20px;
+    border-radius: 1.5vw;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    gap: 50px;
+    gap: 3vw;
   }
 
   .information img {
-    width: 400px;
-    height: 100%;
+    width: 40vw;
+    height: 25vw;
     object-fit: cover;
     object-position: right center;
-    border-radius: 10px;
+    border-radius: 1vw;
   }
 
   .sideInfo {
-    width: 630px;
-    height: 100%;
+    width: 60vw;
+    height: 25vw;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 2vw;
     justify-content: space-evenly;
   }
 
   .information .sideInfo h1 {
     margin: 0;
     color: #fff;
-    font-size: 40px;
+    font-size: 2vw;
     font-weight: 500;
     letter-spacing: 1px;
     font-family: "Faculty Glyphic", sans-serif;
   }
 
   .information .sideInfo p {
-    font-size: 16px;
+    font-size: 1.2vw;
     margin: 0;
     line-height: 1.6;
     color: white;
@@ -544,40 +636,40 @@ header {
   }
 
   .information a {
-    width: 200px;
+    width: 15vw;
     border: none;
     text-decoration: none;
     text-align: center;
     color: var(--primary-col);
     background-color: #fff;
-    border-radius: 5px;
+    border-radius: 0.5vw;
     font-weight: 700;
-    padding: 11px 30px;
+    padding: 0.5vw 1vw;
     transition: all 0.5s ease;
-    border: 2px solid var(--primary-col);
+    border: 0.2vw solid var(--primary-col);
   }
 
   .information a:hover {
     background-color: var(--primary-col);
     color: white;
-    border: 2px solid white;
+    border: 0.2vw solid white;
   }
 
   /* Recent News  */
 
   .recentNews .newsHeading {
-    width: 300px;
-    margin: 30px auto;
-    padding: 10px;
+    width: 25vw;
+    margin: 1.5vw auto;
+    padding: 1vw;
     text-align: center;
-    border-bottom: 2px solid var(--secondary-col);
+    border-bottom: 0.2vw solid var(--secondary-col);
     color: var(--secondary-col);
     font-family: "Faculty Glyphic", sans-serif;
   }
 
   .recentNews .newsContent {
     width: 100%;
-    height: 520px;
+    height: 35vw;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -585,15 +677,15 @@ header {
 
   .recentNews .newsContent .marqueeDiv,
   .recentNews .newsContent img {
-    width: 600px;
-    height: 490px;
-    border-radius: 20px;
+    width: 37vw;
+    height: 30vw;
+    border-radius: 1vw;
   }
 
   .recentNews .newsContent .marqueeDiv {
     background-color: var(--primary-col);
     overflow: hidden;
-    padding: 50px 25px;
+    padding: 2vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -608,14 +700,14 @@ header {
   }
 
   .recentNews .newsContent marquee h1 {
-    font-size: 18px;
+    font-size: 1.5vw;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
   }
   .recentNews .newsContent marquee p {
-    font-size: 15px;
+    font-size: 1.2vw;
     font-weight: 400;
-    padding: 10px 25px 25px 15px;
+    padding: 0.5vw 1vw 1vw 1.5vw;
     font-family: "Roboto", sans-serif;
   }
 
@@ -623,6 +715,10 @@ header {
     object-fit: cover;
     object-position: center;
   }
+
+
+  /* Facilities  */
+
 
   .facilitiesCont {
     width: 100%;
@@ -644,7 +740,7 @@ header {
   .facilitiesCont .facilities {
     display: grid;
     place-items: center;
-    grid-template-columns: repeat(6, 1fr); /* Simplified for better readability */
+    grid-template-columns: repeat(6, 1fr); 
     gap: 2vw;
     position: relative;
   }
@@ -652,7 +748,8 @@ header {
   .facilitiesCont .facilities .facilitiesIcons {
     width: 12vw;
     height: 12vw;
-    font-size: 12px;
+    text-decoration: none;
+    font-size: 0.8vw;
     background-color: #fff;
     color: var(--primary-col);
     padding: 1vw;
@@ -662,13 +759,36 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative; /* Maintain grid alignment */
-    overflow: hidden; /* To handle content expansion smoothly */
+    position: relative; 
+    overflow: hidden;
+  }
+
+  .facilities .facilitiesIcons:hover{
+    background-color:wheat;
+    transform: scale(1.05);
+    border: 0.1vw solid var(--primary-col);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+
+  .facilitiesCont .facilities .facilitiesIcons .icon{
+    width: 4vw;
+    height: 4vw;
+    display: grid;
+    place-items: center;
+    margin: 0.5vw auto;
+  }
+  .facilitiesCont .facilities .facilitiesIcons .icon svg{
+    width: 4vw;
+    height: 4vw;
+  }
+
+  .facilitiesCont .facilities .facilitiesIcons h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
   }
   
   .facilitiesCont .facilities .facilitiesIcons p {
     display: none;
   }
-  
   
 }
