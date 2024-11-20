@@ -15,9 +15,7 @@
   /* border: 1px solid; */
 }
 
-
 @media screen and (max-width: 426px) {
-
   .heading {
     width: 60vw;
     margin: 2vw auto;
@@ -181,7 +179,6 @@
 
   /* Recent News  */
 
-
   .recentNews .newsContent {
     width: 95%;
     height: auto;
@@ -240,20 +237,19 @@
   .facilitiesCont {
     width: 100%;
     padding: 3vw;
-    background-color:  #90ee904f;
+    background-color: #90ee904f;
     text-align: center;
   }
-
 
   .facilitiesCont .facilities {
     display: grid;
     place-items: center;
-    grid-template-columns: repeat(1, 1fr); 
+    grid-template-columns: repeat(1, 1fr);
     gap: 2vw;
     position: relative;
     font-family: "Poppins", sans-serif;
   }
-  
+
   .facilitiesCont .facilities .facilitiesIcons {
     width: 90%;
     height: auto;
@@ -267,17 +263,16 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative; 
+    position: relative;
     overflow: hidden;
   }
-  
+
   .facilitiesCont .facilities .facilitiesIcons h2 {
     font-size: 3.5vw;
     margin: 2vw;
   }
-  
-  
-  .facilities .facilitiesIcons:hover{
+
+  .facilities .facilitiesIcons:hover {
     background-color: #90ee904f;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     transform: scale(1.15);
@@ -285,7 +280,7 @@
     border: 0.2vw solid #fff;
   }
 
-  .facilitiesCont .facilities .facilitiesIcons .icon{
+  .facilitiesCont .facilities .facilitiesIcons .icon {
     width: 12vw;
     height: 12vw;
     display: grid;
@@ -293,26 +288,37 @@
     margin: 0.5vw auto;
   }
 
-  .facilitiesCont .facilities .facilitiesIcons .icon svg{
+  .facilitiesCont .facilities .facilitiesIcons .icon svg {
     width: 12vw;
     height: 12vw;
   }
-  
+
   .facilitiesCont .facilities .facilitiesIcons p {
     width: 0;
     height: 0;
     font-size: 0;
   }
 
-  .facilitiesCont .facilities .facilitiesIcons:hover p{
+  .facilitiesCont .facilities .facilitiesIcons:hover p {
     width: 100%;
     height: auto;
-    font-size:3vw;
+    font-size: 3vw;
   }
 
   /* Latest Blog  */
 
   .blogContainer{
+    background-color: #EDE6E7;
+    margin: 0;
+    padding: 5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+  }
+
+  
+
+  .blogContainer .cardCont {
     width: 100%;
     padding: 2vw auto;
     display: grid;
@@ -321,36 +327,33 @@
     gap: 5vw;
   }
 
-.blogContainer .blogs{
-  width:80vw;
-  text-decoration: none;
-  color: var(--secondary-col);
-  padding: 2vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  gap: 0.5vw;
-  border: 1px solid;
-  border-radius: 1.5vw;
-}
+  .blogContainer .blogs {
+    width: 90%;
+    text-decoration: none;
+    background-color: #fff;
+    color: var(--secondary-col);
+    padding: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 0.5vw;
+    border-radius: 3vw;
+  }
 
-.blogContainer .blogs img{
-  width: 100%;
-  height: 40vw;
-  border-radius: 1.5vw;
-  object-fit: cover;
-}
+  .blogContainer .blogs img {
+    width: 100%;
+    height: 40vw;
+    border-radius: 1.5vw;
+    object-fit: cover;
+  }
 
-.blogContainer .blogs h2{
-  font-family: "Poppins", sans-serif;
-  font-size: 5vw;
-}
-
+  .blogContainer .blogs h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 5vw;
+  }
 }
 
 @media screen and (min-width: 1024px) {
-
-
   .heading {
     width: 25vw;
     margin: 1.5vw auto;
@@ -511,7 +514,6 @@
 
   /* Recent News  */
 
-  
   .recentNews .newsContent {
     width: 100%;
     height: 35vw;
@@ -561,27 +563,23 @@
     object-position: center;
   }
 
-
   /* Facilities  */
-
 
   .facilitiesCont {
     width: 100%;
     padding: 3vw;
-    background-color:  #90ee904f;
+    background-color: #90ee904f;
     text-align: center;
   }
-
-  
 
   .facilitiesCont .facilities {
     display: grid;
     place-items: center;
-    grid-template-columns: repeat(6, 1fr); 
+    grid-template-columns: repeat(6, 1fr);
     gap: 2vw;
     position: relative;
   }
-  
+
   .facilitiesCont .facilities .facilitiesIcons {
     width: 12vw;
     height: 12vw;
@@ -596,37 +594,87 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative; 
+    position: relative;
     overflow: hidden;
   }
 
-  .facilities .facilitiesIcons:hover{
+  .facilities .facilitiesIcons:hover {
     background-color: #90ee904f;
     transform: scale(1.05);
     border: 0.1vw solid var(--primary-col);
     border-radius: 0.5vw;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   }
 
-  .facilitiesCont .facilities .facilitiesIcons .icon{
+  .facilitiesCont .facilities .facilitiesIcons .icon {
     width: 4vw;
     height: 4vw;
     display: grid;
     place-items: center;
     margin: 0.5vw auto;
   }
-  .facilitiesCont .facilities .facilitiesIcons .icon svg{
+  .facilitiesCont .facilities .facilitiesIcons .icon svg {
     width: 4vw;
     height: 4vw;
   }
 
-  .facilitiesCont .facilities .facilitiesIcons h2{
+  .facilitiesCont .facilities .facilitiesIcons h2 {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
   }
-  
+
   .facilitiesCont .facilities .facilitiesIcons p {
     display: none;
   }
-  
+
+  /* Latest Blog  */
+
+  .blogContainer{
+    background-color: #EDE6E7;
+    margin: 0;
+    padding: 0 0 3vw 0;
+  }
+
+  .blogContainer .cardCont{
+    width: 100%;
+    padding: 5vw auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+  }
+
+  .blogContainer .blogs {
+    width: 20vw;
+    height: 23vw;
+    text-decoration: none;
+    background-color: #fff;
+    color: var(--secondary-col);
+    padding: 0.5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    border-radius: 0.8vw;
+    overflow: hidden;
+  }
+
+  .blogContainer .blogs img {
+    width: 100%;
+    height: 10vw;
+    border-radius: 0.5vw;
+    object-fit: cover;
+  }
+
+  .blogContainer .blogs h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8vw;
+    font-weight: 500;
+  }
+
+  .blogContainer .blogs p{
+    font-size: 1vw;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+  }
+
 }
