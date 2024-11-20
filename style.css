@@ -15,98 +15,8 @@
   /* border: 1px solid; */
 }
 
-header {
-  width: 100vw;
-}
 
 @media screen and (max-width: 426px) {
-  nav {
-    width: 100%;
-    height: 15vw;
-    padding: 0 2vw;
-    background-color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-  }
-
-  nav a {
-    text-decoration: none;
-    font-size: 3vw;
-    font-weight: 500;
-    color: var(--primary-col);
-    border: 0.5px solid #00000000;
-    transition: border 0.3s ease;
-    font-family: "Poppins", sans-serif;
-  }
-
-  nav a:hover {
-    border-bottom: 0.5px solid var(--primary-col);
-    height: 100%;
-  }
-
-  .leftNav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  nav .leftNav img {
-    width: 14vw;
-    height: 14vw;
-  }
-
-  .leftNav h4 {
-    display: none;
-  }
-
-  .centerNav,
-  .rightNav {
-    display: none;
-  }
-
-  .hamCont {
-    position: relative;
-  }
-
-  .hamCont .openHam {
-    display: grid;
-    place-items: center;
-    border: none;
-    background-color: transparent;
-    padding: 1vw;
-    border-radius: 1vw;
-  }
-
-  .hamCont .closeHam {
-    border: none;
-    background: transparent;
-    display: none;
-  }
-
-  .hamCont .hamMenu {
-    background-color: #fff;
-    color: var(--primary-col);
-    border: 0.2vw solid var(--primary-col);
-    border-radius: 2vw;
-    padding: 2vw;
-    display: none;
-    flex-direction: column;
-    justify-content: space-evenly;
-    gap: 2vw;
-    position: absolute;
-    z-index: 1;
-    right: 9vw;
-    top: 0;
-  }
-
-  .hamCont .hamMenu a {
-    font-size: 4vw;
-  }
 
   /* Carousel */
 
@@ -329,7 +239,7 @@ header {
   .facilitiesCont {
     width: 100%;
     padding: 3vw;
-    background-color: wheat;
+    background-color:  #90ee904f;
     text-align: center;
   }
 
@@ -377,7 +287,7 @@ header {
   
   
   .facilities .facilitiesIcons:hover{
-    background-color:wheat;
+    background-color: #90ee904f;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     transform: scale(1.15);
     z-index: 1;
@@ -411,101 +321,6 @@ header {
 }
 
 @media screen and (min-width: 1024px) {
-  nav {
-    width: 100%;
-    height: 5vw;
-    background-color: #fff;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-  }
-
-  nav a {
-    text-decoration: none;
-    font-size: 1vw;
-    color: var(--secondary-col);
-    border: 0.15vw solid #00000000;
-    transition: border 0.3s ease;
-    font-family: "Poppins", sans-serif;
-  }
-  nav a:hover {
-    border-bottom: 0.15vw solid var(--primary-col);
-    height: 100%;
-  }
-
-  .leftNav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  nav .leftNav img {
-    width: 3vw;
-    height: 3vw;
-  }
-  .leftNav h4 {
-    font-size: 1vw;
-    margin: 0;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  .centerNav,
-  .rightNav {
-    display: flex;
-    gap: 3vw;
-  }
-
-  .drpdwn {
-    position: relative;
-  }
-
-  .drpdwnBtn {
-    display: grid;
-    place-items: center;
-    /* padding: 1vw; */
-    text-decoration: none;
-  }
-
-  .drpdwnMenu {
-    display: none;
-    position: absolute;
-    width: 10vw;
-    top: 100%;
-    left: 0;
-    background-color: #fff;
-    border: 0.15vw solid var(--primary-col);
-    border-radius: 0.4vw;
-    padding: 0.3vw;
-    box-shadow: 0px 0.5vw 0.8vw rgba(0, 0, 0, 0.2);
-    flex-direction: column;
-  }
-
-  .drpdwnMenu a {
-    padding: 0.4vw;
-    border-radius: 0.2vw;
-    color: #333;
-    text-decoration: none;
-    display: block;
-  }
-
-  .drpdwnMenu a:hover {
-    background-color: #ddd;
-    color: var(--primary-col);
-  }
-
-  .drpdwn:hover .drpdwnMenu {
-    display: flex;
-  }
-
-  .hamCont {
-    display: none;
-  }
 
   /* Carousel */
 
@@ -723,7 +538,7 @@ header {
   .facilitiesCont {
     width: 100%;
     padding: 3vw;
-    background-color: wheat;
+    background-color:  #90ee904f;
     text-align: center;
   }
 
@@ -764,9 +579,10 @@ header {
   }
 
   .facilities .facilitiesIcons:hover{
-    background-color:wheat;
+    background-color: #90ee904f;
     transform: scale(1.05);
     border: 0.1vw solid var(--primary-col);
+    border-radius: 0.5vw;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   }
 
