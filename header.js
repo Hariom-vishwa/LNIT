@@ -8,15 +8,15 @@ function openHam() {
 
   openHamElement.style.display = "none";
   closeHamElement.style.display = "block";
-  hamMenu.style.display = "flex";
-
+  hamMenu.style.transform = "translateY(0)";
+  
   hamMenu.innerHTML = `
   <a href="#">Home</a>
   <a href="#">Dropdown</a>
   <a href="#">Dropdown</a>
   <a href="#">Dropdown</a>
   <a href="#">About Us</a>
-    `;
+  `;
 }
 
 function closeHam() {
@@ -24,5 +24,6 @@ function closeHam() {
   const closeHamElement = document.querySelector(".closeHam");
   openHamElement.style.display = "block";
   closeHamElement.style.display = "none";
-  hamMenu.style.display = "none";
+  // hamMenu.style.display = "none";
+  hamMenu.style.transform = "translateY(-100vw)";
 }

@@ -17,6 +17,7 @@
 
 header {
   width: 100vw;
+  position: relative;
 }
 
 @media screen and (max-width: 426px) {
@@ -71,6 +72,7 @@ header {
 
   .hamCont {
     position: relative;
+    transition: all 0.3s ease;
   }
 
   .hamCont .openHam {
@@ -92,16 +94,18 @@ header {
     background-color: #fff;
     color: var(--primary-col);
     border: 0.2vw solid var(--primary-col);
-    border-radius: 2vw;
+    border-radius: 0 0 2vw 2vw;
     padding: 2vw;
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    transform: translateY(-100vw);
     gap: 2vw;
     position: absolute;
     z-index: 1;
-    right: 9vw;
-    top: 0;
+    right: 10vw;
+    top: -3vw;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
   }
 
   .hamCont .hamMenu a {

@@ -39,3 +39,41 @@ footer .footerDiv a{
     font-size: 4vw;
   }
 }
+
+
+@media screen and (min-width: 1024px){
+  footer {
+    width: 100%;
+    padding: 5vw 0;
+    background: linear-gradient(135deg, var(--secondary-col), #3e3066);
+  }
+  .footerDiv {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    gap: 5vw;
+  }
+
+  footer .footerDiv .divs {
+    width: 25vw;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2vw;
+  }
+
+  footer .footerDiv .divs h2 {
+    font-size: 2vw;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  footer .footerDiv .divs p {
+    font-size: 1.5vw;
+  }
+}
