@@ -14,7 +14,9 @@
   transition: all 0.5s ease;
   /* border: 1px solid; */
 }
-
+body {
+  background-color: gainsboro;
+}
 header {
   width: 100vw;
   position: relative;
@@ -71,40 +73,53 @@ header {
   }
 
   .hamCont {
+    height: 100%;
+    width: 50px;
     position: relative;
+    border-radius: 10px;
     transition: all 0.3s ease;
   }
 
+  .hamCont button {
+    position: absolute;
+  }
+  
   .hamCont .openHam {
     display: grid;
     place-items: center;
     border: none;
+    transform: scale(1);
     background-color: transparent;
     padding: 1vw;
     border-radius: 1vw;
+    right: 5px;
+    top: 9px;
   }
-
+  
   .hamCont .closeHam {
     border: none;
     background: transparent;
-    display: none;
+    transform: scale(0);
+    right: 5px;
+    top: 9px;
+    z-index: 5;
   }
 
   .hamCont .hamMenu {
+    width: 50vw;
+    height: 100vh;
     background-color: #fff;
     color: var(--primary-col);
-    border: 0.2vw solid var(--primary-col);
-    border-radius: 0 0 2vw 2vw;
     padding: 2vw;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    transform: translateY(-100vw);
+    justify-content: start;
+    transform: translateX(100vw);
     gap: 2vw;
     position: absolute;
     z-index: 1;
-    right: 10vw;
-    top: -3vw;
+    right: -2vw;
+    top: 9vw;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
   }
 

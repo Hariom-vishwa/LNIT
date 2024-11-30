@@ -1,33 +1,42 @@
-
-
 // Carousel
 
-let slideIndex = 1;
-showSlides(slideIndex);
+const carouselImg = document.querySelectorAll(".carouselImg");
+const numbertext = document.querySelectorAll(".numbertext");
 
-function plusSlides(n) {
-  showSlides((slideIndex += n));
+carouselImg.forEach((e, i) => {
+  e.style.left = `${i * 100}%`;
+});
+
+var counter = 0;
+
+function updateNumberText() {
+  numbertext.inner.innerHTML = `${counter + 1} / ${carouselImg.length}`;
 }
 
-function currentSlide(n) {
-  showSlides((slideIndex = n));
+function pre() {
+  if (counter == 0) {
+    counter = carouselImg.length - 1;
+  } else {
+    counter--;
+  }
+  slide();
+  updateNumberText();
 }
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  if (n > slides.length) {
-    slideIndex = 1;
+function next() {
+  if (counter >= carouselImg.length - 1) {
+    counter = 0;
+  } else {
+    counter++;
   }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  
-  slides[slideIndex - 1].style.display = "block";
+  slide();
+  updateNumberText();
 }
+
+const slide = () => {
+  carouselImg.forEach((carouselImg) => {
+    carouselImg.style.transform = `translateX(-${counter * 100}%)`;
+  });
+};
 
 // Carousel End
-
