@@ -16,8 +16,8 @@ function openHam() {
 
   hamMenu.innerHTML = `
   <a href="#">Home</a>
-  <a href="#">Dropdown</a>
-  <a href="#">Dropdown</a>
+  <a href="#">Courses</a>
+  <a href="#">Other Courses</a>
   <a href="#">Dropdown</a>
   <a href="#">About Us</a>
   `;
