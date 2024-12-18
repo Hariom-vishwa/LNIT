@@ -331,7 +331,8 @@
 
 @media screen and (min-width: 1024px) {
   .heading {
-    width: 25vw;
+    min-width: 25vw;
+    max-width: 40vw;
     margin: 1.5vw auto;
     padding: 1vw;
     text-align: center;
@@ -433,7 +434,7 @@
     margin: 4vw auto;
     padding: 2vw;
     width: 85%;
-    height: 30vw;
+    /* height: auto; */
     background: linear-gradient(135deg, var(--primary-col), #cb3136);
     border-radius: 1.5vw;
     display: flex;
@@ -444,7 +445,7 @@
 
   .information img {
     width: 40vw;
-    height: 25vw;
+    height: 100%;
     object-fit: cover;
     object-position: right center;
     border-radius: 1vw;
@@ -452,7 +453,7 @@
 
   .sideInfo {
     width: 60vw;
-    height: 25vw;
+    height: auto;
     display: flex;
     flex-direction: column;
     gap: 2vw;

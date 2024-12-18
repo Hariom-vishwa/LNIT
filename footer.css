@@ -55,7 +55,7 @@ footer .footerDiv a{
   }
 
   footer .footerDiv .divs {
-    width: 25vw;
+    /* width: 25vw; */
     color: #fff;
     text-align: center;
     display: flex;
