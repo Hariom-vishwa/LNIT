@@ -107,7 +107,7 @@ header {
 
   .hamCont .hamMenu {
     width: 50vw;
-    height: 100vh;
+    height: auto;
     background-color: #fff;
     color: var(--primary-col);
     padding: 2vw;

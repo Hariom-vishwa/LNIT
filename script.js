@@ -40,3 +40,25 @@ const slide = () => {
 };
 
 // Carousel End
+
+
+// Read more Button 
+const readMoreSection = document.querySelector("#readMoreSection");
+const readMoreBtn = document.querySelector(".readMoreBtn");
+const readLessBtn = document.querySelector(".readLessBtn");
+
+function handleReadMore() {
+  readMoreSection.classList.add("visible");
+  readMoreSection.style.display = "block";
+  readMoreBtn.classList.add("hidden");
+  readLessBtn.classList.remove("hidden");
+}
+
+function handleReadLess() {
+  readMoreSection.classList.remove("visible");
+  setTimeout(() => {
+    readMoreSection.style.display = "none";
+  }, 500); 
+  readLessBtn.classList.add("hidden");
+  readMoreBtn.classList.remove("hidden");
+}

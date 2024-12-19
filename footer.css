@@ -49,7 +49,7 @@ footer .footerDiv a{
   }
   .footerDiv {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     place-items: center;
     gap: 5vw;
   }
